@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
 :root {
@@ -108,7 +109,7 @@ footer{
 }
 
 footer a{
-    color: #586eec;
+    color: #ffffff;
     text-decoration: none;
 }
 
