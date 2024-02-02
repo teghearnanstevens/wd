@@ -1,0 +1,22 @@
+a {
+    font-size: 1.5em;
+}
+* {
+    border: 2px solid blue;
+}
+img {
+    width: 80%;
+}
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+a:hover {
+    background-color: white;
+    color: steelblue;
+}

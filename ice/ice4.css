@@ -1,0 +1,27 @@
+h2{font-size: 1em;
+}
+body{
+    background-color: pink;
+main{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center; 
+        width: 500px;
+    }
+
+
+}
+
+li{ text-align: left;
+}
+figure {
+    
+}
+
+.box{
+    background-color: pink;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
