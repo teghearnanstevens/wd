@@ -2,13 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
 :root {
-  /* change the values below to your colors from your palette */
+  
   --primary-color: #586eec   ;
   --secondary-color: #f8f6f3fa ;
   --accent1-color: #8f8d8d ;
   --accent2-color: rgb(65, 128, 176);
-
-  /* change the values below to your chosen font(s) */
 
   --heading-font: "Rock Salt" ;
   --paragraph-font: Roboto, Helvetica, sans-serif;
@@ -172,7 +170,7 @@ footer .social img{
 }
 
 footer, ol{
-    background-position: 100 0;
+    background-position: 100px, 0px;
     text-align: left; 
     font-size: 1em;
     background-color: #7b7676;
