@@ -22,9 +22,25 @@
   --nav-background-color: #d3d2d2;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
+  
 }
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 body {
-    background-color: #fcfbfb; 
+    background-color: #fcfbfb;
+    font-family: "Rock Salt", Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0 auto;
 }
 
 #content{
@@ -32,7 +48,7 @@ body {
     margin: 0 auto;
 }
 header {
-    background-color: #586eec;
+    background-color: #396E94;
     
 }
 
@@ -40,9 +56,14 @@ header {
     width: 80px;
 }
 
+#logo_link{ 
+    padding-top: 5px;
+}
+
 nav a {
     color: slategray;
     text-align: center;
+    padding: 35px; 
 }
 
 nav a:hover {
@@ -52,6 +73,7 @@ nav a:hover {
 
 #hero-img{
     width: 100%;
+    margin: 0 auto;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -63,14 +85,27 @@ nav a:hover {
 }
 
 .book, .join{
-    background-color: #396E94;
+    background-color: #616365;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px; 
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img{
+    border: 10px solid #396E94;
+    width: 50%;
 }
 
 .book:hover, .join:hover{
     background-color: #d3d2d2;
     color: #396E94;
 }
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}   
 
 .button-box {
     text-align: center;
@@ -81,12 +116,23 @@ main section {
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box; 
+}
+
 #background {
     background-color:#8f8d8d;
     height: 725px;
 }
+
+.icon{
+    padding-top: 10px; 
+}
+
 .msg {
  background-color: #396E94;
+ line-height: 1.5em;
+ padding: 35px;
 }
 
 .msg h2{
@@ -95,6 +141,8 @@ main section {
 
 .msg p{
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 nav a {
@@ -105,25 +153,36 @@ nav a {
 
 footer{
     background-color: #8f8d8d;
-    color: #8f8d8d;
+    color: #050404;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
-    color: #f3e6e6;
+    color: #000000;
     text-decoration: none;
 }
 
 footer:hover{
-    color:#8f8d8d;
+    color:#4d4646;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
 
 footer, ol{
     background-position: 100;
     text-align: left; 
     font-size: 1 em;
-    background-color: #8f8d8d;
+    background-color: #7b7676;
 }
 
 .icon div{
     width: 80px;
+}
+
+.mountains {
+    margin: 30px;
+    width: 50%;
 }

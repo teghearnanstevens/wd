@@ -1,0 +1,21 @@
+body header{
+    margin: 0 auto;
+}
+header{
+    display: grid;
+    justify-content: center;
+}
+
+main{
+    background-color: grey;
+}
+
+.heroimg{
+    margin: 0 auto;
+}
+
+img.roundedimage{
+    border-radius: 50%;
+    border: 10px solid #3d3a3a;
+    max-width: 50;
+}
