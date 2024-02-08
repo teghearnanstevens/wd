@@ -172,9 +172,9 @@ footer .social img{
 }
 
 footer, ol{
-    background-position: 100;
+    background-position: 100 0;
     text-align: left; 
-    font-size: 1 em;
+    font-size: 1em;
     background-color: #7b7676;
 }
 
