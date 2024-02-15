@@ -73,7 +73,7 @@
   background-color: blue;
   grid-column: 4/4;
   grid-row: 4/4;
-  
+
 } 
 
 /* Activity 3 styles */ 
@@ -186,7 +186,7 @@
   /* This is the parent of the activity 6 boxes. */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: (6, 1fr)
+  grid-template-rows: 6px 1fr;
 
 }
 
