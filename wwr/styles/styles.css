@@ -23,6 +23,11 @@
   
 }
 
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
