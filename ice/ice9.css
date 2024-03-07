@@ -1,0 +1,23 @@
+
+
+.awesomearticle{
+    width: 250px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+body{
+    background-color: black;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.card{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    background-color: white;
+}
+.card img {
+    width: 100%;
+}
+
