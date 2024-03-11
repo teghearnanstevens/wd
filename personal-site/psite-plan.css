@@ -45,6 +45,26 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
+/*contactus us page */
+#feedback {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+form{
+  background: var(--paragraph-background-color);
+}
+
 img {
   display: block;
   margin: 0 auto;
