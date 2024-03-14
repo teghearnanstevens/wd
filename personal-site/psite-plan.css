@@ -46,6 +46,11 @@ body {
   text-align: center;
 }
 
+.iframe article{ 
+  width: "100%"; 
+  height:"500";
+}
+
 .book, .join{
   color: white; 
   background-color: #616365;
