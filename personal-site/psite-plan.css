@@ -46,6 +46,20 @@ body {
   text-align: center;
 }
 
+.book, .join{
+  color: white; 
+  background-color: #616365;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px; 
+  margin-top: 80px;
+  border-radius: 5px;
+}
+
+.cyberlogo{
+  width: 150px;
+}
+
 /*contactus us page */
 #feedback {
   background-color: var(--primary-color);
@@ -61,6 +75,10 @@ body {
   margin-top: 3em;
 }
 
+element.style{
+  padding-top: 10px;
+}
+
 form{
   background: var(--paragraph-background-color);
 }
@@ -69,6 +87,7 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 300px;
+  padding: 20px 20px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
