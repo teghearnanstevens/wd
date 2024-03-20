@@ -62,7 +62,8 @@ body {
 }
 
 .cyberlogo{
-  width: 150px;
+  width: 100%;
+  border-radius: 50px;
 }
 
 /*contactus us page */
@@ -107,7 +108,9 @@ hr {
   background: var(--accent1-color);
 }
 header {
-  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px;
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
@@ -150,12 +153,6 @@ p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
 }
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
 
 #hero {
   display: grid;
@@ -173,24 +170,26 @@ nav {
   grid-row: 1/2;
 }
 
-nav  {
-  justify-content: space-around;
-  list-style-type: none;
+
+nav {
   display: flex;
+  justify-content: space-around;
 }
+
 nav a {
-  padding:1em;
-  min-width: 120px;
+
+  color: white;
+  text-align: center;
+  padding: 35px; 
   text-decoration: none;
-  padding: 10px;
 }
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
+
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: white;
+  background-color: var(--headline-color-on-white);
 }
+
+
 .sitemap {
   display: grid;
   justify-content: center;
