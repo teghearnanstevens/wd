@@ -108,8 +108,6 @@ hr {
   background: var(--accent1-color);
 }
 header {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   padding: 50px;
   text-align: center;
   color: var(--headline-color-on-color);
