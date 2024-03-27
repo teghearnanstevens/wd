@@ -302,3 +302,31 @@ div.common_para_two{
   position: relative;
   z-index: -1; /* Ensure the parallax background stays behind the content */
 }
+
+        .parallax {
+          /* The image used */
+          background-image: url("https://as2.ftcdn.net/v2/jpg/06/91/70/19/1000_F_691701993_Ui8e83PyhM6rlpSLFIQxDCcgxAOnHVH7.jpg");
+        
+          /* Set a specific height */
+          min-height: 500px;
+          
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .parallax {
+          /* The image used */
+          background-image: url("https://as2.ftcdn.net/v2/jpg/06/91/70/19/1000_F_691701993_Ui8e83PyhM6rlpSLFIQxDCcgxAOnHVH7.jpg");
+        
+          /* Set a specific height */
+          min-height: 500px;
+          
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
