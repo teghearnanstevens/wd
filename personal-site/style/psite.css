@@ -93,18 +93,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1.headercard {
-  position: absolute; /* Position the h1 element absolutely */
-  top: 3%; /* Align the top of the h1 to the middle of the container */
-  left: 50%; /* Align the left of the h1 to the middle of the container */
-  transform: translate(-50%, -50%); /* Adjust to center the h1 horizontally and vertically */
-  color: white; /* Set the color of the h1 */
-  text-align: center; /* Center the text */
-  font-size: 2em; /* Adjust font size as needed */
+  position: absolute; 
+  top: 3%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  text-align: center; 
+  font-size: 2.5em; 
 }
 
-h2 {
+h2.head2_container{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h2.sub2head2 {
   text-align: center;
 }
+
+h1.workdata {
+  text-align: center;
+  font-size: 3em;
+}
+
 hr {
   height: 3px;
   margin: 35px 0;
@@ -120,13 +131,13 @@ header {
 
 main{
   margin: 0 auto;
-  font-size: 18px;
   text-align: left;
 }
 
 p {
   font-family: var(--paragraph-font);
   padding: 20px 30px;
+  font-size: 18px;
 }
 
 #hero {
@@ -214,6 +225,18 @@ article{
   width: 80%; 
   height: 500px;
   margin: 0 auto;
+}
+
+h2.cyber_news{
+  text-align: center;
+}
+
+h1.com_atth1{
+  text-align: center;
+  font-size: 3.5em;
+  color: white;
+  margin: 0;
+  height: 40%;
 }
 
 iframe {
@@ -305,7 +328,7 @@ div.common_para_two{
 
         .parallax {
           /* The image used */
-          background-image: url("https://as2.ftcdn.net/v2/jpg/06/91/70/19/1000_F_691701993_Ui8e83PyhM6rlpSLFIQxDCcgxAOnHVH7.jpg");
+          background-image: url("../images/codeattack.png");
         
           /* Set a specific height */
           min-height: 500px;
@@ -319,8 +342,7 @@ div.common_para_two{
 
         .parallax {
           /* The image used */
-          background-image: url("https://as2.ftcdn.net/v2/jpg/06/91/70/19/1000_F_691701993_Ui8e83PyhM6rlpSLFIQxDCcgxAOnHVH7.jpg");
-        
+          background-image: url("../images/codeattack.png");
           /* Set a specific height */
           min-height: 500px;
           
@@ -329,4 +351,90 @@ div.common_para_two{
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+          position: relative;
         }
+
+        .com_atth1 {
+          /* Position the heading absolutely */
+          position: absolute;
+          /* Center the heading vertically and horizontally */
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          /* Additional styles for better visibility */
+          color: white;
+          text-align: center;
+          font-size: 3em;
+        }
+
+
+/* Databases */
+
+.dataparallax {
+  /* The image used */
+  background-image: url("../images/datagrid.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sub2head2 {
+  /* Position the heading absolutely */
+  position: absolute;
+  /* Center the heading vertically and horizontally */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Additional styles for better visibility */
+  color: white;
+  text-align: center;
+  font-size: 3em; /* Adjust font size as needed */
+}
+
+.workdata {
+  /* Position the heading absolutely */
+  position: absolute;
+  /* Center the heading vertically and horizontally */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Additional styles for better visibility */
+  color: white;
+  text-align: center;
+  font-size: 3.5em; /* Adjust font size as needed */
+}
+
+.dataparallax_main {
+  /* The image used */
+  background-image: url("../images/data.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dataparallax_intro {
+  
+  background-image: url("../images/introstairs.png");
+
+  
+  min-height: 500px;
+  
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
