@@ -33,15 +33,12 @@ header{
 }
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 #logo_link{
-    padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
 
 body {
-  max-width: 960px;
   margin: 0 auto;
-  padding: 4em;
   font-size: 18px;
   text-align: center;
 }
@@ -86,37 +83,60 @@ element.style{
 }
 
 form{
-  background: var(--paragraph-background-color);
+  background: white;
+  padding: 70px;
+  font-size: large;
 }
 
-img {
+.head_img{
+  width: 100%;
+}
+
+img.logo {
   display: block;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 70px;
   padding: 20px 20px;
+  border-radius: 70px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
+
 h2 {
   text-align: center;
 }
+
 hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent1-color);
 }
 header {
-  padding: 50px;
+  margin: 0 auto;
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
+
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
   text-align: center;
 }
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  z-index: 1;
+}
+
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
@@ -172,6 +192,7 @@ p.colored {
 nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 nav a {
@@ -231,3 +252,44 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+footer{
+  background-color: var(--paragraph-background-color);
+  color: white;
+  margin-top: 0px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+footer p{
+  color: white;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer p a{
+  padding: 5px;
+}
+
+footer p a:hover{
+  color:#4a8bba;
+}
+
+footer .social img{
+  padding: 5px;
+}
+
+footer .social {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p .copy{
+  font-size: small;
+}
+
+
