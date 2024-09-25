@@ -1,3 +1,4 @@
+/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,36 +7,40 @@
 
 body {
     font-family: 'Times New Roman', serif;
-    background-color: #f8f8f8;
+    background-color: white;  /* Light mode background */
+    color: black;  /* Light mode text */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120vh;
 }
 
+/* Dark mode: Inverted colors */
+body.dark {
+    background-color: black;  /* Dark mode background */
+    color: white;  /* Dark mode text */
+}
+
 .container {
     width: 700px;
-    background-color: white;
+    background-color: white;  /* Light mode container background */
     padding: 50px;
     border: 1px solid #ddd;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.header h2 {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+body.dark .container {
+    background-color: black;  /* Dark mode container background */
+    border: 1px solid #666;  /* Optional: change border color in dark mode */
 }
 
-.header h3 {
-    font-size: 16px;
-    color: #4675a7;
-    letter-spacing: 2px;
-    font-weight: normal;
-    margin-top: 5px;
-    margin-bottom: 30px;
+.header h2, .header h3 {
+    color: black;  /* Light mode header text */
+}
+
+body.dark .header h2, body.dark .header h3 {
+    color: white;  /* Dark mode header text */
 }
 
 /* Horizontal lines */
@@ -53,11 +58,20 @@ body {
     margin: 15px 0;
 }
 
+body.dark .line, body.dark .line.thin {
+    background-color: white;  /* Dark mode horizontal line color */
+}
+
 .content p {
     text-align: left;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: black;  /* Light mode content text */
+}
+
+body.dark .content p {
+    color: white;  /* Dark mode content text */
 }
 
 .content em {
@@ -72,6 +86,11 @@ body {
     margin-left: 30px;
     list-style-position: inside;
     margin-bottom: 20px;
+    color: black;  /* Light mode list text */
+}
+
+body.dark .content ol {
+    color: white;  /* Dark mode list text */
 }
 
 .footer {
