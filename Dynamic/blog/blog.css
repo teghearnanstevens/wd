@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 105);
+}
+
+header {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: rgb(164, 163, 159);
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.book-info {
+    width: 70%;
+    padding-right: 30px; /* Add padding between the book info and the filter */
+}
+
+.book-info h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #800000; /* Dark red color for title */
+}
+
+p.lorem{
+    margin-top: 50px;
+}
+
+.details {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.rating {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.image-placeholder, .book-info img {
+    width: 200px;
+    height: 300px; /* Adjust image size */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure it's treated as a block element */
+}
+
+.book-info img {
+    border: 2px solid #ccc;
+    padding: 10px; /* Padding around the image */
+}
+
+.book-info p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.read-more {
+    color: #b22222;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.sort-options {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+}
+
+.sort-options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sort-options select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
