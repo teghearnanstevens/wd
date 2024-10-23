@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Read for Fun</title>
+    <link rel="stylesheet" href="blog2.css">
+    <script src="blog2.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Kids Read for Fun</h1>
+    </header>
+
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Archive</a>
+        <a href="#">Search</a>
+    </nav>
+
+    <div class="main-container">
+        <!-- Book Section -->
+        <div class="book-section">
+            <!-- Book 1 -->
+            <div class="book-entry">
+                <div class="book-date">
+                    <p>July 5, 2022</p>
+                    <p>Age: 10-14</p>
+                    <p>Fantasy</p>
+                    <p>★★★★</p>
+                </div>
+                <div class="book-details">
+                    <h2>Septimus Heap Book One: Magyk</h2>
+                    <img src="ringblog.png" alt="Book cover">
+                    <p>If you enjoy stories about seventh sons of seventh sons and magyk, this is the book for you.</p>
+                    <a href="#" class="read-more">Read More...</a>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-entry">
+                <div class="book-date">
+                    <p>December 12, 2021</p>
+                    <p>Age: 12-16</p>
+                    <p>Fantasy</p>
+                    <p>★★★★★</p>
+                </div>
+                <div class="book-details">
+                    <h2>Magnus Chase Book One: Sword of Summer</h2>
+                    <img src="magnus.jpg" alt="Book cover">
+                    <p>A thrilling adventure based on Norse mythology, filled with humor and heart.</p>
+                    <a href="#" class="read-more">Read More...</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="sort-options">
+                <label for="sort">Sort:</label>
+                <select id="sort" onchange="handleSortChange()">
+                    <option value="alphabetical">Alphabetical</option>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
+    
+                <label for="age">Age:</label>
+                <select id="age" onchange="handleAgeChange()">
+                    <option value="all">All</option>
+                    <option value="5-7">5-7</option>
+                    <option value="8-10">8-10</option>
+                    <option value="10-14">10-14</option>
+                </select>
+    
+                <label for="genre">Genre:</label>
+                <select id="genre" onchange="handleGenreChange()">
+                    <option value="all">All</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="science_fiction">Science Fiction</option>
+                </select>
+    
+                <label for="rating">Rating:</label>
+                <select id="rating" onchange="handleRatingChange()">
+                    <option value="all">All</option>
+                    <option value="5-stars">★★★★★</option>
+                    <option value="4-stars">★★★★</option>
+                    <option value="3-stars">★★★</option>
+                </select>
+            </div>>
+        </div>
+    </div>
+
+</body>
+</html>
