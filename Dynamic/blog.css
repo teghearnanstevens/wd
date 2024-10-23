@@ -29,24 +29,20 @@ nav a {
     font-size: 16px;
 }
 
-.container {
-    display: flex;
-    padding: 20px;
-}
-
 .book-info {
     width: 70%;
-    padding-right: 30px; /* Add padding between the book info and the filter */
+    padding-right: 30px; 
 }
 
 .book-info h2 {
     margin-top: 0;
     font-size: 22px;
-    color: #800000; /* Dark red color for title */
+    color: #800000; 
 }
 
 p.lorem{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .details {
@@ -68,7 +64,7 @@ p.lorem{
 }
 
 .book-info img {
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     padding: 10px; /* Padding around the image */
 }
 
@@ -76,6 +72,7 @@ p.lorem{
     font-size: 14px;
     line-height: 1.8;
     color: #333;
+    
 }
 
 .read-more {
