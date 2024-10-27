@@ -6,6 +6,7 @@
     <title>Kids Read for Fun</title>
     <link rel="stylesheet" href="blog2.css">
     <script src="blog2.js"></script>
+    <script src="blog3.js" defer></script>
 </head>
 <body>
 
@@ -22,37 +23,8 @@
     <div class="main-container">
         <!-- Book Section -->
         <div class="book-section">
-            <!-- Book 1 -->
-            <div class="book-entry">
-                <div class="book-date">
-                    <p>July 5, 2022</p>
-                    <p>Age: 10-14</p>
-                    <p>Fantasy</p>
-                    <p>★★★★</p>
-                </div>
-                <div class="book-details">
-                    <h2>Septimus Heap Book One: Magyk</h2>
-                    <img src="ringblog.png" alt="Book cover">
-                    <p>If you enjoy stories about seventh sons of seventh sons and magyk, this is the book for you.</p>
-                    <a href="#" class="read-more">Read More...</a>
-                </div>
-            </div>
-
-            <!-- Book 2 -->
-            <div class="book-entry">
-                <div class="book-date">
-                    <p>December 12, 2021</p>
-                    <p>Age: 12-16</p>
-                    <p>Fantasy</p>
-                    <p>★★★★★</p>
-                </div>
-                <div class="book-details">
-                    <h2>Magnus Chase Book One: Sword of Summer</h2>
-                    <img src="magnus.jpg" alt="Book cover">
-                    <p>A thrilling adventure based on Norse mythology, filled with humor and heart.</p>
-                    <a href="#" class="read-more">Read More...</a>
-                </div>
-            </div>
+            <!-- Books Container -->
+            <div id="articles-container"></div>
         </div>
 
         <!-- Filters Section -->
@@ -89,7 +61,7 @@
                     <option value="4-stars">★★★★</option>
                     <option value="3-stars">★★★</option>
                 </select>
-            </div>>
+            </div>
         </div>
     </div>
 
