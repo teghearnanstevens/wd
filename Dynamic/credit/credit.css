@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.card-form {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    position: absolute;
+    margin-right: 300px;
+    display: grid; /* Add grid layout */
+    grid-template-columns: 1fr; /* Define grid columns */
+    grid-template-rows: auto auto;
+}
+
+.backcard {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.magnet {
+    background-color: black;
+    height: 50px;
+    grid-row: 1;
+    grid-column: 1 / -1;
+    width: 480px;
+}
+
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    grid-column: 1 / -1; /* Make this element span both columns */
+}
+
+label {
+    font-size: 12px;
+    color: #555;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.label2 {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input2 {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.cvc {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 2;
+    align-self: center;
+    justify-self: end;
+    margin-top: 120px;
+    margin-right: 30px;
+}
+
+.expiration-cvc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / -1; /* Span the full width if necessary */
+}
+
+.expiration,
+.cvc {
+    width: 48%;
+}
+
+.expiration-fields {
+    display: flex;
+    gap: 5px;
+}
+
+.expiration-fields input {
+    width: 45%;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
