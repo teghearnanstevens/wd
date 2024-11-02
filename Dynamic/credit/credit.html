@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Mock-up</title>
+    <link rel="stylesheet" href="credit.css">
+    <script src="credit.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card-form">
+            <p class="total">TOTAL: $199</p>
+            <label for="card-number">CARD NUMBER</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9101 1020">
+            
+            <label for="card-holder">CARD HOLDER</label>
+            <input type="text" id="card-holder" placeholder="John Doe">
+            
+            <div class="expiration-cvc">
+                <div class="expiration">
+                    <label for="expiration-mm">EXPIRATION</label>
+                    <div class="expiration-fields">
+                        <input type="text" id="expiration-mm" placeholder="MM" maxlength="2">
+                        <input type="text" id="expiration-yy" placeholder="YY" maxlength="2">
+                    </div>
+                </div>
+            </div>
+            
+            <button id="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    
+        <div class="backcard">
+            <div class="magnet"></div>
+            <div class="cvc">
+                <label class="label2" for="cvc">CVC/CVV</label>
+                <input class="input2" type="text" id="cvc" placeholder="XXX" maxlength="3">
+            </div>
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
