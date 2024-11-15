@@ -5,23 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
-    <script src="recipes.mjs"></script>
-    <script src="main.js"></script>
+    
+    <script type="module" src="main.js" defer></script>
+
+    <link rel="icon" href="images/recipe-book.png" type="image/png">
+
+    
+     <meta property="og:title" content="Recipe Book">
+     <meta property="og:type" content="website" />
+     <meta property="og:description" content="Explore delicious recipes and find your next favorite dish!">
+     <meta property="og:image" content="https://yourwebsite.com/images/apple-crisp.jpg">
+     <meta property="og:url" content="https://yourwebsite.com/recipe-book">
+ 
+     <meta name="twitter:card" content="summary_large_image">
+
 </head>
 <body>
     <header>
         <h1>Recipe Book</h1>
     </header>
 
-    <!-- Search Bar -->
     <div class="search-container">
         <input type="text" id="search-bar" placeholder="Find a Recipe!">
         <button id="search-btn">&#128269;</button>
     </div>
+    
+    <main class="recipe-container"></main>
 
-    <!-- Recipe Display Section -->
-    <main class="recipe-container">
-        <div class="recipe-card">
+    <footer>
+        <p>&copy; 2023</p>
+
+        <div class="social-icons">
+          
+	        <a class="social" href="#"><img src="images/instagram.webp" alt="instagram icon"></a>
+	        <a class="social" href="#"><img src="images/facebook.webp" alt="youtube icon"></a>
+	        <a class="social" href="#"><img src="images/pinterest.webp" alt="pinterest icon"></a>
+        </div>
+    
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <main class="recipe-container"> -->
+        <!-- <div class="recipe-card">
             <img src="images/apple-crisp.jpg" alt="Recipe Image" id="recipe-img">
             <div class="recipe-info">
                 <div class="tags">
@@ -30,22 +59,11 @@
                 </div>
                 <h2>Apple Crisp</h2>
                 <div class="rating">★★★★★</div>
-                <p class="description">This is a short description of the recipe...</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
             </div>
-        </div>
-    </main>
+        </div> -->
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023</p>
-        <div class="social-icons">
-           <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-	        <a href="#"><img src="images/instagram.webp" alt="instagram icon"></a>
-	        <a href="#"><img src="images/facebook.webp" alt="youtube icon"></a>
-	        <a href="#"><img src="images/pinterest.webp" alt="pinterest icon"></a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- Recipe Container for dynamic content --> 
+    <!-- </main> -->
