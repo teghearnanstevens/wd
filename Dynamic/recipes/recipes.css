@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -62,17 +62,21 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 20px 0;
-    width: 100%;
+    width: 100%; 
 }
 
 #recipe-img {
-    width: 50%;
+    max-width: 50%;
     object-fit: cover;
 }
 
 .recipe-info {
     padding: 20px;
     flex: 1;
+}
+
+.recipe-container img{
+    max-width: 50%;
 }
 
 .tags {
@@ -114,12 +118,22 @@ footer {
     border-radius: 50%;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.social img {
+    max-width: 50px;
+}
+
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .recipe-card {
         flex-direction: column;
     }
     #recipe-img {
-        width: 100%;
+        width: 50%;
     }
 }
