@@ -2,6 +2,8 @@ import { recipes } from './recipes.mjs';
 
 document.addEventListener("DOMContentLoaded", () => {
     const recipeContainer = document.querySelector(".recipe-container");
+    const searchBar = document.querySelector("#search-bar");
+    const searchButton = document.querySelector("#search-btn");
 
     // Check if recipes were successfully imported
     if (!recipes || recipes.length === 0) {
@@ -14,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.classList.add("recipe-card");
 
-        // Corrected the image source reference
         card.innerHTML = `
             <img src="${recipe.image}" alt="${recipe.name}" class="recipe-img">
             <div class="recipe-info">
@@ -28,6 +29,23 @@ document.addEventListener("DOMContentLoaded", () => {
         recipeContainer.appendChild(card);
     }
 
-    // Loop through recipes and render them
-    recipes.forEach(recipe => renderRecipe(recipe));
+    // Function to display filtered recipes
+    function displayRecipes(filteredRecipes) {
+        recipeContainer.innerHTML = ""; // Clear existing recipes
+        filteredRecipes.forEach(recipe => renderRecipe(recipe));
+    }
+
+    // Initial rendering of all recipes
+    displayRecipes(recipes);
+
+    // Search functionality
+    searchBar.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const query = searchBar.value.trim();
+        const filteredRecipes = recipes.filter(recipe =>
+            recipe.name.toLowerCase().includes(query.toLowerCase())
+        );
+        displayRecipes(filteredRecipes);
+    });
 });
+
