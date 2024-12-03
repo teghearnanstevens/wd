@@ -31,6 +31,11 @@ header{
     display: grid;
     grid-template-columns: 150px 1/2;
 }
+
+#titles{
+  align-items: center;
+}
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 #logo_link{
     justify-self: center;
@@ -88,6 +93,11 @@ form{
   font-size: large;
 }
 
+.ailogo{
+  width: 400px;
+  max-width: 900px;
+}
+
 .head_img{
   width: 100%;
 }
@@ -124,6 +134,8 @@ header {
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
   text-align: center;
+  padding : 50px;
+
 }
 
 h1 {
@@ -251,6 +263,16 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.image1{
+  max-width: 900px;
+  width: 400px;
+}
+
+.image2{
+  max-width: 900px;
+  width: 400px;
 }
 
 footer{
