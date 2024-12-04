@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberSafe Haven</title>
     <link rel="stylesheet" href="style/psite.css">
+    <script src="java/site.js"></script>
 </head>
 <body>
     <header>
@@ -23,6 +24,40 @@
             <img class="intro_img" src="images/newintro.jpg" alt="cyber_image">
             <h1 class="headercard">Intro to CyberSecurity</h1>
           </div>
+
+           <!-- Search Bar Section -->
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search articles..." onkeyup="filterArticles()">
+        </div>
+
+         <!-- News Section -->
+         <h2 class="news-title">Cybersecurity Articles</h2>
+         <div id="articleContainer" class="article-container">
+             <div class="article-box" onclick="showArticle(0)">
+                 <img src="images/powergrid.png" alt="Article 1">
+                 <h3>Cyber security of a power grid: State-of-the-art</h3>
+             </div>
+             <div class="article-box" onclick="showArticle(1)">
+                 <img src="images/trendscyber.png" alt="Article 2">
+                 <h3>The recent trends in cyber security: A review</h3>
+             </div>
+             <div class="article-box" onclick="showArticle(2)">
+                 <img src="images/cyberthreats.png" alt="Article 3">
+                 <h3>An Investigation on Cyber Security Threats and Security Models</h3>
+             </div>
+         </div>
+ 
+         <!-- Modal for Expanding Articles -->
+         <div id="articleModal" class="modal">
+             <div class="modal-content">
+                 <span class="close" onclick="closeModal()">&times;</span>
+                 <h2 id="modalTitle"></h2>
+                 <iframe id="modalIframe" src="" frameborder="0"></iframe>
+             </div>
+         </div>
+     </main>
+
+
 
           <h2 class="head2_container">What is the importance of CyberSecurity?</h2>
           
