@@ -102,6 +102,11 @@ form{
   width: 100%;
 }
 
+.new_intro_img{
+  width: 40%;
+  padding: 50px;
+}
+
 img.logo {
   display: block;
   margin: 0 auto;
