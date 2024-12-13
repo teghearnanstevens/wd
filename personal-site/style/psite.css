@@ -50,6 +50,11 @@ header{
   margin: 50px;
 }
 
+.search-container #search-btn {
+  margin-left: 45%;
+  padding: 15px;
+}
+
 .news-title {
   text-align: center;
   margin: 20px 0;
@@ -159,22 +164,20 @@ element.style{
   padding-top: 10px;
 }
 
-form{
-  background: var(--paragraph-background-color);
-}
-
 .image-container {
-  /* max-width: 900px;Set the width of the container to 100% of the viewport width */
-  position: relative;
-  overflow: hidden;
+    position: relative; /* Establish a positioning context for child elements */
+    text-align: center; /* Center text inside this container */
+    width: 100%; /* Ensure it spans the full width */
+    height: auto; /* Automatically adjust height */
+    overflow: hidden; /* Prevent content from spilling out */
 }
 
 img.intro_img {
   display: block;
-  width: 70%; 
+  width: 75%; 
   margin: 0 auto;
   border-radius: 40px;
-  height: 500px;
+  height: 590px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -398,6 +401,148 @@ div.common_para_two{
   background-color: var(--accent2-color); /* Change background color on hover */
 }
 
+/* Parent container */
+.pass_main {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Title styling */
+.pass-title {
+  position: absolute; /* Allow placement over the image */
+  top: 60%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure perfect centering */
+  color: white; /* Ensure visibility on the image */
+  font-size: 2.5em; /* Adjust font size */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  z-index: 2; /* Ensure it appears above the image */
+  text-align: center; /* Center-align text */
+}
+
+/* Password checker Page */
+
+.password-checker-container {
+    position: relative; /* Keeps it in flow below the image */
+    background: white; /* Ensure it stands out */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 70px auto; /* Center the container */
+    width: 600px; /* Adjust width */
+    z-index: 5; /* Ensure it's above the main content */
+    text-align: center; /* Center-align text and form elements */
+    height: 100px;
+}
+
+/* Input field */
+#password {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Strength bar */
+.strength-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#strength-bar {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+#password-suggestion {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.form-container {
+    position: relative; /* Keeps it in flow below other elements */
+    background-color: white; /* White background for clarity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Center the container and make it responsive */
+    margin: 70px auto; /* Add space above and below */
+    z-index: 10; /* Ensure it's above the image */
+    opacity: 0.95; /* Slight transparency for blending */
+    text-align: left;
+}
+
+.report-form {
+  display: grid;
+  gap: 15px;
+}
+
+.report-form label {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--paragraph-color-on-white);
+}
+
+.report-form input,
+.report-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: var(--paragraph-font);
+}
+
+.report-form textarea {
+  resize: none; /* Prevent resizing */
+}
+
+.report-form button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.report-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+.code-img {
+  position: relative; /* Keep the image in the natural flow */
+  width: 100%; /* Stretch to the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Place behind the title */
+  opacity: 0.8; /* Slight transparency to ensure content above is visible */
+}
+
+.report-paragraph {
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--nav-hover-background-color);
+  color: var(--secondary-color);
+}
+
+.checker-paragraph {
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--nav-hover-background-color);
+  color: var(--secondary-color);
+}
+
+
 /* Parallax*/
 
 @media only screen and (max-width: 1366px) {
@@ -529,3 +674,19 @@ div.common_para_two{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.dataparallax_pass {
+  /* The image used */
+  background-image: url("../images/contentnew.avif");
+
+  /* Set a specific height */
+  min-height: 500px;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
