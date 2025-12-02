@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TJ Budget Tracker</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js for the spending wheel -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>TJ Budget Tracker</h1>
+      <p>Track your income and spending by category</p>
+    </header>
+
+    <main class="layout">
+      <!-- LEFT SIDE: forms & saves -->
+      <section class="left-panel">
+        <!-- Overview Card -->
+        <div class="card">
+          <h2>Overview</h2>
+          <div class="totals">
+            <div>
+              <span class="label">Total Income</span>
+              <span id="total-income" class="value">$0.00</span>
+            </div>
+            <div>
+              <span class="label">Total Spent</span>
+              <span id="total-spent" class="value">$0.00</span>
+            </div>
+            <div>
+              <span class="label">Remaining</span>
+              <span id="remaining" class="value">$0.00</span>
+            </div>
+          </div>
+
+          <!-- New Blank Budget Button -->
+          <button id="clear-current-btn" class="btn-secondary">
+            New Blank Budget
+          </button>
+        </div>
+
+        <!-- Add Income -->
+        <div class="card">
+          <h2>Add Income</h2>
+          <form id="income-form">
+            <label>
+              Amount
+              <input
+                type="number"
+                id="income-amount"
+                step="0.01"
+                min="0"
+                placeholder="e.g. 500"
+                required
+              />
+            </label>
+            <button type="submit">Add Income</button>
+          </form>
+        </div>
+
+        <!-- Add Expense -->
+        <div class="card">
+          <h2>Add Expense</h2>
+          <form id="expense-form">
+            <label>
+              Category
+              <select id="expense-category"></select>
+            </label>
+
+            <div class="new-category-row">
+              <input
+                type="text"
+                id="new-category-name"
+                placeholder="New category name (optional)"
+              />
+              <button type="button" id="add-category-btn">
+                Add Category
+              </button>
+            </div>
+
+            <label>
+              Amount
+              <input
+                type="number"
+                id="expense-amount"
+                step="0.01"
+                min="0"
+                placeholder="e.g. 25.50"
+                required
+              />
+            </label>
+
+            <button type="submit">Add Expense</button>
+          </form>
+        </div>
+
+        <!-- Saved Budgets -->
+        <div class="card">
+          <h2>Saved Budgets</h2>
+          <form id="save-form" class="inline-form">
+            <input
+              type="text"
+              id="save-name"
+              placeholder="e.g. December_tracking"
+              required
+            />
+            <button type="submit">Save</button>
+          </form>
+
+          <ul id="saved-list" class="saved-list">
+            <!-- Filled by JS -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDE: chart & categories table -->
+      <section class="right-panel">
+        <!-- Spending Wheel -->
+        <div class="card">
+          <h2>Spending Wheel</h2>
+          <canvas id="spending-chart"></canvas>
+        </div>
+
+        <!-- Categories Table -->
+        <div class="card">
+          <h2>Categories</h2>
+          <table class="categories-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Spent</th>
+                <th class="actions-cell">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="categories-body">
+              <!-- Filled by JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Toast / message -->
+    <div id="message" class="message hidden"></div>
+
+    <footer class="app-footer">
+      <span>Budget tracker running in your browser. Data is saved locally.</span>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script src="code.js"></script>
+</body>
+</html>
